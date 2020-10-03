@@ -1,0 +1,109 @@
+*{
+	margin: 0px;
+}
+
+h1{
+	text-align: center;
+	font-family: 'Montserrat', bold;
+	color: #FF4A4A;
+}
+
+.habit_title{
+	text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.day_text{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: 10%;
+
+}
+
+.counter{
+	text-align: center;
+	font-family: 'Noto Sans HK', sans-serif;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	font-size: 100px;
+	bottom: 15%;
+}
+
+header{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	padding: 20px;
+}
+main{
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.1%;
+	height: 500px;
+	margin-top: 40px;
+}
+.habit{
+	margin: 10px;
+	 width: 200px;
+	 height: 200px;
+	 float: left;
+	 padding: 7px; 
+	 display: block;
+	 overflow: hidden;
+	 border-radius: 30px;
+	 background-color: #5798FE;
+	 position: relative;
+	
+}
+
+.add{
+	 margin: 10px;
+	 width: 200px;
+	 height: 200px;
+	 float: left;
+	 padding: 7px; 
+	 display: block;
+	 overflow: hidden;
+	 border-radius: 30px;
+	 background-color: #DCDCDC;
+	 box-shadow: 5px 10px 10px #A9A9A9 inset;
+}
+
+.plus{
+	position: relative;
+ 	 margin: auto;
+ 	 margin-top: 22%;
+	 width: 100px;
+	 height: 100px;
+	 padding: 7px; 
+	 display: block;
+	 overflow: hidden;
+	 border-radius: 100px;
+	 background-color: #C0C0C0;
+	 box-shadow: 5px 10px 10px #A9A9A9;
+}
+
+.plus p{
+	position: absolute;
+	font-size: 100px;
+	color: white;
+	left: 25%;
+	top: -3%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+hr{
+	margin: auto;
+	width: 25%;
+}

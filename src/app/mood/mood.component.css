@@ -1,0 +1,70 @@
+*{
+	margin: 0px;
+}
+
+.mood_title{
+	text-align: center;
+	font-family: 'Montserrat', bold;
+	color: #FF4A4A;
+}
+
+.subtitle{
+	text-align: center;
+	font-family: 'Noto Sans HK', sans-serif;
+	color: #FF4A4A;
+	font-size: 25px;
+}
+
+.mood_type{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: -20%;
+
+}
+
+header{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	padding: 20px;
+}
+main{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height: 500px;
+	margin-top: 40px;
+}
+.mood{
+	margin: 10px;
+	margin-bottom: 25px;
+	 width: 100px;
+	 height: 100px;
+	 float: left;
+	 padding: 7px; 
+	 display: block;
+	 border-radius: 30px;
+	 background-color: #5798FE;
+	 position: relative;
+	
+}
+
+img{
+	width: 100%;
+	border-radius: 4px;
+
+}
+
+img:hover{
+	transform: scale(2,2);
+	transition: .3s transform;
+}
+
+hr{
+	margin: auto;
+	width: 25%;
+}
