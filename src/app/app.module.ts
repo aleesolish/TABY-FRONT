@@ -9,6 +9,7 @@ import { DetailComponent } from './detail/detail.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminComponent } from './admin/admin.component';
 import { SuperAdminComponent } from './super-admin/super-admin.component';
+import { LogInComponent } from './log-in/log-in.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SuperAdminComponent } from './super-admin/super-admin.component';
     DetailComponent,
     AdminLoginComponent,
     AdminComponent,
-    SuperAdminComponent
+    SuperAdminComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,
