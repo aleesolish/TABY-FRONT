@@ -8,7 +8,7 @@ import {HomeComponent} from './home/home.component';
 import {LogInComponent } from './log-in/log-in.component';
 import {MoodComponent} from './mood/mood.component';
 import {DetailComponent} from './detail/detail.component';
-
+import { NewhabComponent } from './newhab/newhab.component';
 
 
 const routes: Routes = [
@@ -23,6 +23,10 @@ const routes: Routes = [
   {
     path: '',
     component: LogInComponent
+  },
+  {
+    path: 'jiji',
+    component: NewhabComponent
   }
 ];
 

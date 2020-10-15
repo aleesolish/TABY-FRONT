@@ -27,7 +27,8 @@
             <span class="fa fa-google"></span> Sign in with Google
       </a>
     
-      <a href="/auth/facebook">Register With Facebook</a>
+      <button class="jiji" (click)="signInWithFB()">
+		<i class="fab fa-facebook"></i> Iniciar Sesión con Facebook</button>
       
     
 			<button type="submit">Sign Up</button>
@@ -40,12 +41,15 @@
 			<span>or use your account</span>
 			<input required type="username" id="input-username" name="username" placeholder="username" />
 			<input required type="password" name="password" id="input-password" placeholder="Password" />
-		
-      <a href="/auth/google">Login With Google</a>
-
-      <a href="/auth/facebook">Login With Facebook</a>
-      
 			<button [routerLink]="'/home'" type="submit">Sign In</button>
+			<button class="fb" (click)="signInWithFB()">
+				<i class="fab fa-facebook"></i>Login with Facebook</button>
+			<button class="gg" (click)="signInWithGoogle()">
+				<i class="fab fa-facebook"></i> Login with Google</button>
+
+	  
+      
+			
 		</form>
 	</div>
 	<div class="overlay-container">
