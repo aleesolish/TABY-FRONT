@@ -19,6 +19,11 @@ import {
   AmazonLoginProvider,
 } from 'angularx-social-login';
 import { MainComponent } from './main/main.component';
+import { SuperAdminLoginComponent } from './super-admin-login/super-admin-login.component';
+import { AdminRegisterProfileComponent } from './admin-register-profile/admin-register-profile.component';
+import { AdminUpdateProfileComponent } from './admin-update-profile/admin-update-profile.component';
+import { SuperAdminRegisterAdminComponent } from './super-admin-register-admin/super-admin-register-admin.component';
+import { SuperAdminUpdateAdminComponent } from './super-admin-update-admin/super-admin-update-admin.component';
 
 
 @NgModule({
@@ -32,7 +37,12 @@ import { MainComponent } from './main/main.component';
     SuperAdminComponent,
     LogInComponent,
     NewhabComponent,
-    MainComponent
+    MainComponent,
+    SuperAdminLoginComponent,
+    AdminRegisterProfileComponent,
+    AdminUpdateProfileComponent,
+    SuperAdminRegisterAdminComponent,
+    SuperAdminUpdateAdminComponent
   ],
   imports: [
     BrowserModule,
