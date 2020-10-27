@@ -18,6 +18,7 @@ import {
   FacebookLoginProvider,
   AmazonLoginProvider,
 } from 'angularx-social-login';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import {
     AdminComponent,
     SuperAdminComponent,
     LogInComponent,
-    NewhabComponent
+    NewhabComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,10 @@ import {LogInComponent } from './log-in/log-in.component';
 import {MoodComponent} from './mood/mood.component';
 import {DetailComponent} from './detail/detail.component';
 import { NewhabComponent } from './newhab/newhab.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { SuperAdminComponent } from './super-admin/super-admin.component';
+import { MainComponent } from './main/main.component';
 
 
 const routes: Routes = [
@@ -25,8 +29,28 @@ const routes: Routes = [
     component: LogInComponent
   },
   {
-    path: 'jiji',
+    path: 'newhab',
     component: NewhabComponent
+  },
+  {
+    path: 'mood',
+    component: MoodComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
+  },
+  {
+    path: 'admin-login',
+    component: AdminLoginComponent
+  },
+  {
+    path: 'super-admin',
+    component: SuperAdminComponent
+  },
+  {
+    path: 'main',
+    component: MainComponent
   }
 ];
 
