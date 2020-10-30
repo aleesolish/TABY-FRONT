@@ -3,7 +3,7 @@
           <div class="sidebar-toggle-box">
               <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
           </div>
-        <a href="#" class="logo"><b>Admin Panel</b></a>
+        <a href="admin" class="logo"><b [routerLink]="'/admin'">Admin Panel</b></a>
         <div class="nav notify-row" id="top_menu">
            
                      
@@ -11,7 +11,7 @@
         </div>
         <div class="top-menu">
         	<ul class="nav pull-right top-menu">
-                <li><a class="logout" href="logout.hmtl">Logout</a></li>
+                <li [routerLink]="'/admin-login'"><a class="logout" href="admin-login">Logout</a></li>
         	</ul>
         </div>
     </header>
@@ -19,18 +19,18 @@
       <div id="sidebar"  class="nav-collapse ">
           <ul class="sidebar-menu" id="nav-accordion">
           
-          	  <p class="centered"><a href="#"><img src="../../assets/images/ui-sam.jpg" class="img-circle" width="60"></a></p>
+          	  <p class="centered"><img src="../../assets/images/ui-sam.jpg" class="img-circle" width="60" [routerLink]="'/admin'"></p>
           	  <h5 class="centered"></h5>
           	  	
-              <li class="mt">
-                  <a href="change-password.php">
+              <!--<li class="mt">
+                  <a href="admin.html">
                       <i class="fa fa-file"></i>
                       <span>Change Password</span>
                   </a>
-              </li>
+              </li>-->
 
               <li class="sub-menu">
-                  <a href="manage-users.php" >
+                  <a href="admin" [routerLink]="'/admin'">
                       <i class="fa fa-users"></i>
                       <span>Manage Users</span>
                   </a>
@@ -70,7 +70,7 @@
                           </div>
                       </div>
                       <div style="margin-left:100px;">
-                      <input type="submit" name="Submit" value="Update" class="btn btn-theme"></div>
+                      <input type="submit" name="Submit" value="Update" class="btn btn-theme" [routerLink]="'/admin'"></div>
                       </form>
                   </div>
               </div>
