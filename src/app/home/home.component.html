@@ -1,12 +1,12 @@
 <header>
  
-<h1><button class="button">Habits</button> | <button class="button"> Moods</button></h1>
+<h1><button class="button">Habits</button> | <button class="button" [routerLink]="'/mood'"> Moods</button></h1>
 <hr/>
 
 </header>
 
 <main>
-	<button class="add"><div class="plus"><p>+</p></div></button>
+	<button class="add" [routerLink]="'/newhab'"><div class="plus" [routerLink]="'/newhab'"><p>+</p></div></button>
 	<button class="habit"><div class="title"><h2 class="habit_title">Water Plants</h2></div><p class="counter">7</p><h3 class="day_text">DAYS AGO</h3></button>
 	<button class="habit"><div class="title"><h2 class="habit_title">Cigarettes</h2></div><p class="counter">32</p><h3 class="day_text">DAYS AGO</h3></button>
 	<button class="habit"><div class="title"><h2 class="habit_title">Drink Soda</h2></div><p class="counter">1</p><h3 class="day_text">DAYS AGO</h3></button>
