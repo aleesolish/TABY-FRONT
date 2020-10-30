@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 *{
 	margin: 0px;
 }
@@ -10,9 +11,9 @@
 
 .subtitle{
 	text-align: center;
-	font-family: 'Noto Sans HK', sans-serif;
 	color: #FF4A4A;
 	font-size: 25px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .mood_type{
@@ -69,4 +70,8 @@ img:hover{
 hr{
 	margin: auto;
 	width: 25%;
+}
+
+h1{
+	font-family: 'Montserrat', sans-serif;
 }

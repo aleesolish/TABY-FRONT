@@ -12,8 +12,7 @@
         <div class="menu"><select #habitIntent name="intent" class="dropdown">
             <option value="Build">Build</option>
             <option value="Fun">Fun</option>
-            <option value="...">...</option>
-            <option value="...">...</option>
+            <option value="Save">Save</option>
           </select></div>
         <div><h2>How many days do you want to track</h2></div>
         <div class="testo"><input #habitDays type="number" class="tiesto" name="quantity" min="1" max="365"></div>
@@ -21,13 +20,13 @@
         <div class="menu"><select #habitUnits name="unit" class="dropdown">
             <option value="Calories">Calories</option>
             <option value="Days">Days</option>
-            <option value="...">...</option>
-            <option value="...">...</option>
+            <option value="Money">Money</option>
           </select></div>
         <div><h2>Add note</h2></div>
         <div class="testo"><input #habitNote type="text" class="tiesto" name="fname"></div>
         <div > 
-          <input type="button"  style="margin-top:10px; "routerLink="/jiji" class="load_more_button" value="Registrar"  (click)="addBotes(habitName.value, habitIntent.value, habitDays.value, habitUnits.value, habitNote.value);"/>
+          <input type="button"  
+           style="margin-top:10px; "routerLink="/jiji" class="load_more_button registrar" value="Registrar"  (click)="addBotes(habitName.value, habitIntent.value, habitDays.value, habitUnits.value, habitNote.value);"/>
           
       </div>
         

@@ -1,42 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 *{
 	margin: 0px;
 }
 
 h1{
 	text-align: center;
-	font-family: 'Montserrat', bold;
-	color: grey;
+	font-family: 'Montserrat', sans-serif;
+    color:  #FF4A4A;
+    font-size: 35px;
 }
 h2{
 	text-align: center;
-	font-family: 'Montserrat', bold;
-	color: grey;
+	font-family: 'Montserrat', sans-serif;
+	color:  #FF4A4A;
 }
 main{
 	margin-left: auto;
 	margin-right: auto;
 	width: 86.1%;
 	height: 500px;
-	margin-top: 40px;
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 .testo {
     position: relative;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .menu {
     position: relative;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .tiesto {
     width: 50%;
-    background-color: rgb(184, 179, 179);
+    background-color:#FFC300;
     padding: 12px 20px;
     margin: 8px 0;
     border: none;
-    font-family: 'Montserrat', bold;
     font-size: large;
     text-align: center;
     border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
     
 }
 .tiesto:focus{
@@ -46,7 +51,7 @@ main{
     width: 10%;
     padding: 16px 20px;
     border: none;
-    font-family: 'Montserrat', bold;
+    font-family: 'Montserrat', sans-serif;
     font-size: large;
     border-radius: 15px;
     text-align: center;
@@ -54,4 +59,16 @@ main{
 }
 .dropdown:focus{
     outline:none;
+}
+
+.registrar{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FF4A4A;
+    color: whitesmoke;
+    border-radius: 15px;
+    font-size: 28px;
+    border-color: #FF4A4A;
+    text-align: center;
+    margin-left: 660px;
+
 }
