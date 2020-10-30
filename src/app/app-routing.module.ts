@@ -18,7 +18,7 @@ import { MainComponent } from './main/main.component';
 import { SuperAdminLoginComponent } from './super-admin-login/super-admin-login.component';
 import { SuperAdminRegisterAdminComponent } from './super-admin-register-admin/super-admin-register-admin.component';
 import { SuperAdminUpdateAdminComponent } from './super-admin-update-admin/super-admin-update-admin.component';
-
+import { SignInComponent } from './sign-in/sign-in.component';
 
 const routes: Routes = [
   {
@@ -76,6 +76,10 @@ const routes: Routes = [
   {
     path: 'admin-update-profile',
     component: AdminUpdateProfileComponent
+  },
+  {
+    path: 'sign-in',
+    component: SignInComponent
   }
 ];
 

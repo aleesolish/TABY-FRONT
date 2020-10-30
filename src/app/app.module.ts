@@ -24,6 +24,7 @@ import { AdminRegisterProfileComponent } from './admin-register-profile/admin-re
 import { AdminUpdateProfileComponent } from './admin-update-profile/admin-update-profile.component';
 import { SuperAdminRegisterAdminComponent } from './super-admin-register-admin/super-admin-register-admin.component';
 import { SuperAdminUpdateAdminComponent } from './super-admin-update-admin/super-admin-update-admin.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { SuperAdminUpdateAdminComponent } from './super-admin-update-admin/super
     AdminRegisterProfileComponent,
     AdminUpdateProfileComponent,
     SuperAdminRegisterAdminComponent,
-    SuperAdminUpdateAdminComponent
+    SuperAdminUpdateAdminComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
