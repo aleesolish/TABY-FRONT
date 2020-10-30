@@ -11,6 +11,7 @@ import { AdminComponent } from './admin/admin.component';
 import { SuperAdminComponent } from './super-admin/super-admin.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { NewhabComponent } from './newhab/newhab.component';
+import {HttpClientModule} from '@angular/common/http';
 
 import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
 import {
@@ -18,6 +19,8 @@ import {
   FacebookLoginProvider,
   AmazonLoginProvider,
 } from 'angularx-social-login';
+
+import { DataService } from './services/data.service';
 
 
 @NgModule({
@@ -30,15 +33,17 @@ import {
     AdminComponent,
     SuperAdminComponent,
     LogInComponent,
-    NewhabComponent
+    NewhabComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SocialLoginModule
+    SocialLoginModule,
+    HttpClientModule
     
   ],
-  providers: [
+  providers: [DataService,
     {
       provide: 'SocialAuthServiceConfig',
       useValue: {

@@ -11,6 +11,7 @@ import {DetailComponent} from './detail/detail.component';
 import { NewhabComponent } from './newhab/newhab.component';
 
 
+
 const routes: Routes = [
   {
     path: 'home',
