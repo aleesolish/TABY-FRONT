@@ -1,0 +1,78 @@
+<section id="container" >
+  <header class="header black-bg">
+          <div class="sidebar-toggle-box">
+              <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+          </div>
+        <a href="admin" class="logo"><b [routerLink]="'/admin'">Admin Panel</b></a>
+        <div class="nav notify-row" id="top_menu">
+           
+                     
+          
+        </div>
+        <div class="top-menu">
+        	<ul class="nav pull-right top-menu">
+                <li [routerLink]="'/admin-login'"><a class="logout" href="admin-login">Logout</a></li>
+        	</ul>
+        </div>
+    </header>
+  <aside>
+      <div id="sidebar"  class="nav-collapse ">
+          <ul class="sidebar-menu" id="nav-accordion">
+          
+          	  <p class="centered"><img src="../../assets/images/ui-sam.jpg" class="img-circle" width="60" [routerLink]="'/admin'"></p>
+          	  <h5 class="centered"></h5>
+          	  	
+              <!--<li class="mt">
+                  <a href="admin.html">
+                      <i class="fa fa-file"></i>
+                      <span>Change Password</span>
+                  </a>
+              </li>-->
+
+              <li class="sub-menu">
+                  <a href="admin" [routerLink]="'/admin'">
+                      <i class="fa fa-users"></i>
+                      <span>Manage Users</span>
+                  </a>
+               
+              </li>
+          
+             
+          </ul>
+      </div>
+  </aside>
+
+  <section id="main-content">
+      <section class="wrapper">
+      	<h3><i class="fa fa-angle-right"></i> User Information</h3>
+         	
+			<div class="row">
+			
+              
+                  
+              <div class="col-md-12">
+                  <div class="content-panel">
+                  <p align="center" style="color:#F00;"></p>
+                       <form class="form-horizontal style-form" name="form1" method="post" action="" onSubmit="return valid();">
+                       <p style="color:#F00"></p>                          
+                        
+                        <div class="form-group">
+                          <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Email</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" name="email" value="" >
+                          </div>
+                        </div>
+                                                    
+                        <div class="form-group">
+                          <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Timestamp</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" name="contact" value="Timestamp" readonly>
+                          </div>
+                      </div>
+                      <div style="margin-left:100px;">
+                      <input type="submit" name="Submit" value="Update" class="btn btn-theme" [routerLink]="'/admin'"></div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+	</section>
