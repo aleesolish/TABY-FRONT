@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 *{
 	margin: 0px;
 }
@@ -10,7 +11,7 @@ h1{
 
 .habit_title{
 	text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', bold;
     margin-top: 10px;
     color: white;
     padding-left: 20px;
@@ -19,7 +20,7 @@ h1{
 
 .day_text{
 	text-align: center;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', bold;
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
@@ -31,7 +32,7 @@ h1{
 
 .counter{
 	text-align: center;
-	font-family: 'Noto Sans HK', sans-serif;
+	font-family: 'Montserrat', bold;
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
@@ -42,7 +43,7 @@ h1{
 }
 
 header{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', bold;
 	font-size: 30px;
 	padding: 20px;
 }
@@ -125,6 +126,7 @@ hr{
 	transition: all 0.5s;
 	cursor: pointer;
 	margin: 5px;
+	font-family: 'Montserrat', bold;
   }
   .button:focus{
 	  outline:none;
@@ -156,13 +158,15 @@ hr{
 	opacity: 1;
 	right: 0;
   }
-  .counter {
-	display: table-cell;
-	margin:1.5%;
-	font-size:50px;
-	background-color: #FF6F6F;
-	width:200px;
-	border-radius: 50%;
-	height:200px;
-	vertical-align: middle;
+  
+  .menu{
+	  background-color: #9B59B6;
+	  font-size: 38px;
+	  color: whitesmoke;
   }
+
+  .menu2{
+	background-color: #F1C40F;
+	font-size: 38px;
+	color: whitesmoke;
+}
