@@ -21,6 +21,7 @@ import {
 } from 'angularx-social-login';
 
 import { DataService } from './services/data.service';
+import { AdminRegisterComponent } from './admin-register/admin-register.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { DataService } from './services/data.service';
     SuperAdminComponent,
     LogInComponent,
     NewhabComponent,
+    AdminRegisterComponent,
   
   ],
   imports: [
