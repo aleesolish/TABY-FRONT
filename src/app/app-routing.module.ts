@@ -85,7 +85,7 @@ const routes: Routes = [
   },
   {
     path: 'admin-register',
-    component: SignInComponent
+    component: AdminRegisterComponent
   }
 ];
 

@@ -22,6 +22,7 @@ import {
 
 import { DataService } from './services/data.service';
 import { AdminRegisterComponent } from './admin-register/admin-register.component';
+import { AdminLogComponent } from './admin-log/admin-log.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { AdminRegisterComponent } from './admin-register/admin-register.componen
     LogInComponent,
     NewhabComponent,
     AdminRegisterComponent,
+    AdminLogComponent,
   
   ],
   imports: [
