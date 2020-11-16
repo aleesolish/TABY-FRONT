@@ -20,6 +20,7 @@ import { SuperAdminRegisterAdminComponent } from './super-admin-register-admin/s
 import { SuperAdminUpdateAdminComponent } from './super-admin-update-admin/super-admin-update-admin.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { AdminRegisterComponent } from './admin-register/admin-register.component';
+import { LoginAdminComponent } from './login-admin/login-admin.component';
 
 
 const routes: Routes = [
@@ -86,6 +87,10 @@ const routes: Routes = [
   {
     path: 'admin-register',
     component: AdminRegisterComponent
+  },
+  {
+    path: 'login-admin',
+    component: LoginAdminComponent
   }
 ];
 

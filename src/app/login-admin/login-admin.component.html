@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+   
+
+
+</head>
+
+<body>
+	
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+
+		<form action="/auth/signup" method="POST">
+			<h1>Create A Taby Account</h1>
+        
+			
+			<span>or use your email for registration</span>
+			<input required type="text" id="input-username" name="username"  placeholder="Name" />
+			<input required type="email" id="input-email" name="email" placeholder="Email" />
+			<input required type="password" name="password" id="input-password"  placeholder="Password" />
+		
+
+      
+    
+			<button type="submit">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container" id="taby">
+        
+		<form action="/auth/login" method="POST">
+			<h1>Sign in</h1>
+			<input required type="username" id="input-username" name="username" placeholder="username" />
+			<input required type="password" name="password" id="input-password" placeholder="Password" />
+			<button [routerLink]="'/home'" type="submit">Sign In</button>
+			
+
+	  
+      
+			
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with Taby please login with your personal info</p>
+				<button class="ghost" id="signIn" routerLink="'/sign-in'">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, can we trust in you?</h1>
+				<button class="ghost" id="signUp" routerLink='/admin-register'>Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+   
+	 
+<script src="/javascripts/script.js"></script>
+
+</body>
+</html>
+
