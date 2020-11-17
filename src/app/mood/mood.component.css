@@ -135,6 +135,7 @@ h1{
 }
 
 .title{
+	position: relative;
 	justify-content: center;
-	margin-left: 570px;
+	left: 37%;
 }

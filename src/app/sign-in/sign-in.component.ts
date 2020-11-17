@@ -15,7 +15,7 @@ export class SignInComponent implements OnInit {
   ngOnInit(): void {
   }
  
-  addBotes(nombre:string, correo: string, pw: string ): void{ 
+  addUsers(nombre:string, correo: string, pw: string ): void{ 
       
     if (!nombre || !correo || !pw) { 
       alert("Para registrar un bote, no debe de haber campos vacíos.");

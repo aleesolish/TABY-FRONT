@@ -18,13 +18,13 @@
 			
             <span>Use your email for registration</span>
             <br>
-            <input class="form-space" required type="text" id="input-username" name="username"  placeholder="Name" />
+            <input #usName class="form-space" required type="text" id="input-username" name="username"  placeholder="Name" />
             <br>
-            <input class="form-space"  required type="email" id="input-email" name="email" placeholder="Email" />
+            <input #usMail class="form-space"  required type="email" id="input-email" name="email" placeholder="Email" />
             <br>
-			<input class="form-space"  required type="password" name="password" id="input-password"  placeholder="Password" />
+			<input #usPw class="form-space"  required type="password" name="password" id="input-password"  placeholder="Password" />
             <br>
-            <button class= "normal" type="submit">Sign Up </button>
+            <button class= "normal" type="submit" (click)="addUsers(usName.value, usMail.value, usPw.value)" routerLink="/home">Sign Up </button>
             <br>
             <span>Or</span> <br>
             <button class= "face" type="submit">Sign Up with Facebook</button>
