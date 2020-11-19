@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Habit } from '../models/habit';
+import { Admin } from '../models/admins';
 import { Observable, of, throwError } from 'rxjs';
 import {
   HttpClient,
@@ -8,13 +8,11 @@ import {
   HttpErrorResponse,
 } from '@angular/common/http';
 import { map, retry, catchError, tap } from 'rxjs/operators';
-
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
-
-  endpoint = 'http://localhost:8080/api/habit';
+export class AdminsService {
+  endpoint = 'http://localhost:8080/api/admins';
 
   constructor(private http: HttpClient) { }
   private extraData(res: Response) {
@@ -23,20 +21,20 @@ export class DataService {
     return body;
   }
   httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
-  getHabits(): Observable<any> {
+
+  getAdmins(): Observable<any> {
     return this.http.get(this.endpoint);
   }
-  addHabit(jabit: Habit): Observable<any>{ 
-    return this.http.post(this.endpoint, jabit).pipe(map(this.extraData)); 
+  addAdmin(admon: Admin): Observable<any>{ 
+    return this.http.post(this.endpoint, admon).pipe(map(this.extraData)); 
   } 
-  
-  deleteHab(id): Observable<any> { 
+  deleteAdmin(id): Observable<any> { 
     return this.http.delete( this.endpoint+'/'+id)
   }
-  updateHab(id): Observable<any> {
+  updateAdmin(id): Observable<any> {
     return this.http.get(this.endpoint+'/'+id).pipe(map(this.extraData));
   }
-  update(id, habhab:Habit): Observable <any> {
-      return this.http.put(this.endpoint+'/'+id, habhab)
+  update(id, admon:Admin): Observable <any> {
+      return this.http.put(this.endpoint+'/'+id, admon)
   }
 }

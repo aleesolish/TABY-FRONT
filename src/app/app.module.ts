@@ -24,6 +24,7 @@ import { DataService } from './services/data.service';
 import { AdminRegisterComponent } from './admin-register/admin-register.component';
 import { AdminLogComponent } from './admin-log/admin-log.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
+import { SuperadminComponent } from './superadmin/superadmin.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { LoginAdminComponent } from './login-admin/login-admin.component';
     AdminRegisterComponent,
     AdminLogComponent,
     LoginAdminComponent,
+    SuperadminComponent,
   
   ],
   imports: [

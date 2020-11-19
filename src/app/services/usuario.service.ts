@@ -23,7 +23,19 @@ export class UsuarioService {
   }
   httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
 
+  getUsers(): Observable<any> {
+    return this.http.get(this.endpoint);
+  }
   addUser(iuser: User): Observable<any>{ 
     return this.http.post(this.endpoint, iuser).pipe(map(this.extraData)); 
   } 
+  deleteUser(id): Observable<any> { 
+    return this.http.delete( this.endpoint+'/'+id)
+  }
+  updateUser(id): Observable<any> {
+    return this.http.get(this.endpoint+'/'+id).pipe(map(this.extraData));
+  }
+  update(id, iuser:User): Observable <any> {
+      return this.http.put(this.endpoint+'/'+id, iuser)
+  }
 }

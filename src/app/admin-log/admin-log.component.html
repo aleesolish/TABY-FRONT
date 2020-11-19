@@ -1,1 +1,14 @@
-<p>admin-log works!</p>
+<tbody >
+    <tr>
+        
+        <td><input #useName class="form-control" (model)="userz.nombre"></td>
+        <td><input #useMail class="form-control" (model)="userz.correo"></td>
+        <td><button class="btn btn-info" (click)="update(useName.value, useMail.value, userz.pw)">Update</button></td>
+      </tr>
+    <tr *ngFor="let us of yucer">
+        <td>{{us.nombre}}</td>
+        <td>{{us.correo}}</td>
+        <td><button class = "btn btn-danger" (click)="removeUser(us._id)" >Remove</button></td>
+        <td><button class = "btn btn-warning" (click) = "updateUser(us._id)">Edit</button></td>
+    </tr>
+</tbody>

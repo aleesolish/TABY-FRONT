@@ -13,7 +13,7 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminRegisterProfileComponent } from './admin-register-profile/admin-register-profile.component';
 import { AdminUpdateProfileComponent } from './admin-update-profile/admin-update-profile.component';
-import { SuperAdminComponent } from './super-admin/super-admin.component';
+import { SuperadminComponent } from './superadmin/superadmin.component';
 import { MainComponent } from './main/main.component';
 import { SuperAdminLoginComponent } from './super-admin-login/super-admin-login.component';
 import { SuperAdminRegisterAdminComponent } from './super-admin-register-admin/super-admin-register-admin.component';
@@ -21,6 +21,7 @@ import { SuperAdminUpdateAdminComponent } from './super-admin-update-admin/super
 import { SignInComponent } from './sign-in/sign-in.component';
 import { AdminRegisterComponent } from './admin-register/admin-register.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
+import {AdminLogComponent} from './admin-log/admin-log.component';
 
 
 const routes: Routes = [
@@ -36,6 +37,7 @@ const routes: Routes = [
     path: '',
     component: LogInComponent
   },
+  
   {
     path: 'newhab',
     component: NewhabComponent
@@ -46,7 +48,7 @@ const routes: Routes = [
   },
   {
     path: 'admin',
-    component: AdminComponent
+    component: AdminLogComponent
   },
   {
     path: 'admin-login',
@@ -54,7 +56,7 @@ const routes: Routes = [
   },
   {
     path: 'super-admin',
-    component: SuperAdminComponent
+    component: SuperadminComponent
   },
   {
     path: 'main',

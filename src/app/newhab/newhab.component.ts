@@ -15,10 +15,10 @@ export class NewhabComponent implements OnInit {
   ngOnInit(): void {
   }
  
-  addBotes(name:string, intent: string, days: number, units: string, note: string): void{ 
+  addHabits(name:string, intent: string, days: number, units: string, note: string): void{ 
       
     if (!name || !intent || !days || !units || !note) { 
-      alert("Para registrar un bote, no debe de haber campos vacíos.");
+      alert("Para registrar un habito, no debe de haber campos vacíos.");
       return; 
     } 
     this.dataService.addHabit({ name, intent, days, units, note } as Habit).subscribe((habit) => {  });  

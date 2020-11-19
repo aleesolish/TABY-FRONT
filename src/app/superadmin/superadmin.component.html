@@ -1,0 +1,45 @@
+<h1>USUARIOS ACTIVOS</h1>
+<tbody >
+    <tr>
+        <td><input #useName class="form-control" (model)="userz.nombre"></td>
+        <td><input #useMail class="form-control" (model)="userz.correo"></td>
+        <td><button class="btn btn-info" (click)="update(useName.value, useMail.value, userz.pw)">Update</button></td>
+      </tr>
+    <tr *ngFor="let us of yucer">
+        <td>{{us.nombre}}</td>
+        <td>{{us.correo}}</td>
+        <td><button class = "btn btn-danger" (click)="removeUser(us._id)" >Remove</button></td>
+        <td><button class = "btn btn-warning" (click) = "updateUser(us._id)">Edit</button></td>
+    </tr>
+</tbody>
+<br>
+<br>
+<h1>Administradores Activos</h1>
+<tbody >
+    <tr>
+        <td><input #adName class="form-control" (model)="admon.nombre"></td>
+        <td><input #adMail class="form-control" (model)="admon.correo"></td>
+        <td><button class="btn btn-info" (click)="update2(adName.value, adMail.value, admon.pw)">Update</button></td>
+      </tr>
+    <tr *ngFor="let ad of admonz">
+        <td>{{ad.nombre}}</td>
+        <td>{{ad.correo}}</td>
+        <td><button class = "btn btn-danger" (click)="removeAdmin(ad._id)" >Remove</button></td>
+        <td><button class = "btn btn-warning" (click) = "updateAdmin(ad._id)">Edit</button></td>
+    </tr>
+</tbody>
+
+<form >
+    <h1>Add an administrator</h1>
+    <br>
+    <input #adNom class="form-space" required type="text" id="input-username" name="username"  placeholder="Name" />
+    <br>
+    <input #adCorr class="form-space"  required type="email" id="input-email" name="email" placeholder="Email" />
+    <br>
+    <input #adPsw class="form-space"  required type="password" name="password" id="input-password"  placeholder="Password" />
+    <br>
+    <button class= "normal" type="submit" (click)="addAdmin(adNom.value, adCorr.value, adPsw.value)" routerLink="/super-admin">Add </button>
+    
+
+
+</form>
