@@ -30,10 +30,8 @@
     border-radius: 15px;
     height: 25px;
     width: 255px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+    justify-content: center;
+    text-align: center;
 }
 html{
     margin: 0%;
@@ -51,7 +49,9 @@ tbody{
     width: 100%;
     height: 100%;
     padding: 0%;
-    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Montserrat', sans-serif;
     
 

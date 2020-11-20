@@ -26,8 +26,8 @@
         <td><button class="btn btn-info" (click)="update2(adName.value, adMail.value, admon.pw)">Update</button></td>
       </tr>
     <tr *ngFor="let ad of admonz">
-        <td>{{ad.nombre}}</td>
-        <td>{{ad.correo}}</td>
+        <td class="centro">{{ad.nombre}}</td>
+        <td class="centro">{{ad.correo}}</td>
         <td><button class = "btn btn-danger" (click)="removeAdmin(ad._id)" >Remove</button></td>
         <td><button class = "btn btn-warning" (click) = "updateAdmin(ad._id)">Edit</button></td>
     </tr>

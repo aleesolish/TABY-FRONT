@@ -93,6 +93,10 @@ const routes: Routes = [
   {
     path: 'login-admin',
     component: LoginAdminComponent
+  },
+  {
+    path: 'admin-log',
+    component: AdminLogComponent
   }
 ];
 
