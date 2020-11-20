@@ -22,6 +22,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { AdminRegisterComponent } from './admin-register/admin-register.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import {AdminLogComponent} from './admin-log/admin-log.component';
+import {AuthGuard} from './guard/auth.guard';
 
 
 const routes: Routes = [
@@ -56,7 +57,8 @@ const routes: Routes = [
   },
   {
     path: 'super-admin',
-    component: SuperadminComponent
+    component: SuperadminComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'main',
