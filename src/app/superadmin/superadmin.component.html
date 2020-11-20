@@ -1,8 +1,11 @@
+<html>
+    <form>
 <h1>USUARIOS ACTIVOS</h1>
-<tbody >
-    <tr>
-        <td><input #useName class="form-control" (model)="userz.nombre"></td>
-        <td><input #useMail class="form-control" (model)="userz.correo"></td>
+<tbody>
+    
+    <tr class="centro">
+        <td><input #useName class="form-control centro" (model)="userz.nombre"></td>
+        <td><input #useMail class="form-control centro" (model)="userz.correo"></td>
         <td><button class="btn btn-info" (click)="update(useName.value, useMail.value, userz.pw)">Update</button></td>
       </tr>
     <tr *ngFor="let us of yucer">
@@ -11,24 +14,25 @@
         <td><button class = "btn btn-danger" (click)="removeUser(us._id)" >Remove</button></td>
         <td><button class = "btn btn-warning" (click) = "updateUser(us._id)">Edit</button></td>
     </tr>
+
 </tbody>
 <br>
 <br>
 <h1>Administradores Activos</h1>
-<tbody >
-    <tr>
-        <td><input #adName class="form-control" (model)="admon.nombre"></td>
-        <td><input #adMail class="form-control" (model)="admon.correo"></td>
+<tbody>
+    <tr class="centro">
+        <td><input #adName class="form-control centro" (model)="admon.nombre"></td>
+        <td><input #adMail class="form-control centro" (model)="admon.correo"></td>
         <td><button class="btn btn-info" (click)="update2(adName.value, adMail.value, admon.pw)">Update</button></td>
       </tr>
     <tr *ngFor="let ad of admonz">
-        <td>{{ad.nombre}}</td>
-        <td>{{ad.correo}}</td>
+        <td class="centro">{{ad.nombre}}</td>
+        <td class="centro">{{ad.correo}}</td>
         <td><button class = "btn btn-danger" (click)="removeAdmin(ad._id)" >Remove</button></td>
         <td><button class = "btn btn-warning" (click) = "updateAdmin(ad._id)">Edit</button></td>
     </tr>
 </tbody>
-
+</form>
 <form >
     <h1>Add an administrator</h1>
     <br>
@@ -43,3 +47,4 @@
 
 
 </form>
+</html>
