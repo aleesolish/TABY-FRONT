@@ -53,7 +53,10 @@ tbody{
     margin-left: auto;
     margin-right: auto;
     font-family: 'Montserrat', sans-serif;
-    
+   
+    left: 40%;
+    right: 10%;
+
 
 }
 .face{
