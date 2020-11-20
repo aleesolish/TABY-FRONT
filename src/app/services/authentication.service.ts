@@ -135,10 +135,10 @@ export class AuthService {
          //Redirect to target route after callback processing
          console.log('USER------>'); 
          this.user_type = 'usuario'; 
-         targetRoute = "'/super-admin'"; 
+         targetRoute = '/super-admin'; 
          if ( user.sub == 'google-oauth2|105854856876566974261' || user.sub == 'google-oauth2|112018040146262791493' || user.sub == 'google-oauth2|108979601279268274748' ) { 
            this.user_type = 'usuario';
-            targetRoute = "'/super-admin'"; 
+            targetRoute = '/super-admin'; 
           } 
           this.user_for_db = { 
             nombre: user.nombre,  
