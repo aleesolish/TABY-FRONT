@@ -32,6 +32,7 @@ export class AuthService {
       domain: 'dev-f9sl6vhc.us.auth0.com',
       client_id: 'jU9t08iKRqk8mAmLRPqB2R0hrRUgIvXp', 
       redirect_uri: '${window.location.origin}',
+      audience: `https://dev-f9sl6vhc.us.auth0.com/api/v2/`,
       
     })
   ) as Observable<Auth0Client>).pipe(
@@ -136,7 +137,7 @@ export class AuthService {
          console.log('USER------>'); 
          this.user_type = 'usuario'; 
          targetRoute = '/super-admin'; 
-         if ( user.sub == 'google-oauth2|105854856876566974261' || user.sub == 'google-oauth2|112018040146262791493' || user.sub == 'google-oauth2|108979601279268274748' ) { 
+         if ( user.sub == 'google-oauth2|105854856876566974261' || user.sub == 'google-oauth2|116516268418492091431' || user.sub == 'google-oauth2|101979597602794059430' ) { 
            this.user_type = 'usuario';
             targetRoute = '/super-admin'; 
           } 

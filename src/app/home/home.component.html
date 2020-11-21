@@ -8,9 +8,6 @@
 <main>
 	<button class="add" routerLink="/newhab" ><div class="plus"><p>+</p></div></button>
 	<div *ngFor="let jab of jabit">
-	<button class="habit" routerLink="/detail"><div class="title"><h2 class="habit_title">{{jab.name}}</h2></div><p class="counter">7</p><h3 class="day_text">DAYS AGO</h3></button>
+	<button class="habit" routerLink="/detail"><div class="title"><h2 class="habit_title">{{jab.name}}</h2></div><p class="counter">{{jab.days}}</p><h3 class="day_text">DAYS</h3></button>
 	</div>
-	<div class="counter" data-count="150">0</div>
-	<div class="counter" data-count="85">0</div>
-	<div class="counter" data-count="2200">0</div>
 </main>

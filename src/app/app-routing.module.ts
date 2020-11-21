@@ -23,6 +23,9 @@ import { AdminRegisterComponent } from './admin-register/admin-register.componen
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import {AdminLogComponent} from './admin-log/admin-log.component';
 import {AuthGuard} from './guard/auth.guard';
+import { YutuComponent } from './yutu/yutu.component';
+
+
 
 
 const routes: Routes = [
@@ -38,7 +41,10 @@ const routes: Routes = [
     path: '',
     component: LogInComponent
   },
-  
+  {
+    path: 'yutu',
+    component: YutuComponent
+  },
   {
     path: 'newhab',
     component: NewhabComponent
@@ -58,7 +64,7 @@ const routes: Routes = [
   {
     path: 'super-admin',
     component: SuperadminComponent,
-    canActivate: [AuthGuard]
+    
   },
   {
     path: 'main',
@@ -104,6 +110,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  
 })
 export class AppRoutingModule { }

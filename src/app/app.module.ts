@@ -26,6 +26,9 @@ import { AdminLogComponent } from './admin-log/admin-log.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { SuperadminComponent } from './superadmin/superadmin.component';
 import { AuthModule } from '@auth0/auth0-angular';
+import { AuthService } from './services/authentication.service';
+import { YoutubePipe } from './pipe/youtube.pipe';
+import { YutuComponent } from './yutu/yutu.component';
 
 
 @NgModule({
@@ -43,13 +46,16 @@ import { AuthModule } from '@auth0/auth0-angular';
     AdminLogComponent,
     LoginAdminComponent,
     SuperadminComponent,
+    YoutubePipe,
+    YutuComponent,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SocialLoginModule,
-    HttpClientModule
+    HttpClientModule,
+    AuthModule,
     
   ],
   providers: [DataService,
